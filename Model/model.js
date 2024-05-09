@@ -1,11 +1,30 @@
 
+const Model={}
+Model.signUp=(req,res)=>{
 
-Model={}
+}
+Model.login=(req,res)=>{
 
-Model.test=(req,res)=>{
-    
-    console.log("hi");
-    res.send('HI')
+}
+Model.getAllFights=(req,res)=>{
+
+}
+Model.bookFlight=(req,res)=>{
+
+}
+Model.cancelFlight=(req,res)=>{
+
+}
+Model.getAllBookingByUser=(req,res)=>{
+
+}
+Model.getAllBookingAdmin=(req,res)=>{
+
+}
+Model.cancelBookingOfAdmin=(req,res)=>{
+
+}
+Model.logout=(req,res)=>{    
 }
 
 
