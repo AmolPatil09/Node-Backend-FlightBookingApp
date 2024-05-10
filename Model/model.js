@@ -1,7 +1,15 @@
-
+const connection=require('../Utilities/connection')
 const Model={}
-Model.signUp=(req,res)=>{
-
+Model.checkUser=async(emailId)=>{
+    const model=await connection.getUsers();
+    console.log(model);
+    const user=await model.findOne({emailId:emailId}) 
+    return user;
+}
+Model.signUp=async(signUpData)=>{
+    const model=await connection.getUsers();
+    const user=await model.create(signUpData)
+    return user;
 }
 Model.login=(req,res)=>{
 

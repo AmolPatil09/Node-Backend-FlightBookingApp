@@ -42,3 +42,188 @@
     at Function.process_params (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\index.js:346:12)
     at next (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\index.js:280:10)
     at Function.handle (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\index.js:175:3)
+2024-05-10T16:52:19.488Z - ReferenceError: User is not defined
+    at C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:7:22
+    at Layer.handle [as handle_request] (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\index.js:47:12)
+2024-05-10T16:57:43.710Z - ReferenceError: emailId is not defined
+    at new User (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\User.js:5:12)
+    at C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:7:22
+    at Layer.handle [as handle_request] (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\index.js:175:3)
+2024-05-10T16:58:33.486Z - ReferenceError: emailId is not defined
+    at new User (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\User.js:7:12)
+    at C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:7:22
+    at Layer.handle [as handle_request] (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\express\lib\router\index.js:175:3)
+2024-05-10T17:28:17.831Z - MongooseServerSelectionError: connect ECONNREFUSED ::1:27017
+    at _handleConnectionErrors (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\connection.js:875:11)
+    at NativeConnection.openUri (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\connection.js:826:11)
+    at async connect (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:176:5)
+    at async Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:4:17)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T17:29:44.029Z - MongooseServerSelectionError: connect ECONNREFUSED ::1:27017
+    at _handleConnectionErrors (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\connection.js:875:11)
+    at NativeConnection.openUri (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\connection.js:826:11)
+    at async connect (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:176:5)
+    at async Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:4:17)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T17:32:06.013Z - MongooseServerSelectionError: connect ECONNREFUSED ::1:27017
+    at _handleConnectionErrors (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\connection.js:875:11)
+    at NativeConnection.openUri (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\connection.js:826:11)
+    at async connect (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:176:5)
+    at async Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:4:17)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T17:38:34.500Z - MongooseServerSelectionError: connect ECONNREFUSED ::1:27017
+    at _handleConnectionErrors (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\connection.js:875:11)
+    at NativeConnection.openUri (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\connection.js:826:11)
+    at async connect (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:176:5)
+    at async Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:4:17)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T17:42:18.723Z - MongoParseError: option usernewurlparser is not supported
+    at parseOptions (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongodb\lib\connection_string.js:273:15)
+    at new MongoClient (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongodb\lib\mongo_client.js:52:63)
+    at NativeConnection.createClient (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\drivers\node-mongodb-native\connection.js:293:14)
+    at NativeConnection.openUri (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\connection.js:801:34)
+    at Mongoose.connect (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\mongoose.js:414:15)
+    at connect (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:176:27)
+    at connection.getUsers (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:191:13)
+    at Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:4:34)
+    at service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:26)
+    at C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:33
+2024-05-10T17:43:14.524Z - MongooseServerSelectionError: connect ECONNREFUSED ::1:27017
+    at _handleConnectionErrors (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\connection.js:875:11)
+    at NativeConnection.openUri (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\connection.js:826:11)
+    at async connect (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:176:12)
+    at async Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:4:17)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T17:44:18.092Z - MongooseServerSelectionError: connect ECONNREFUSED ::1:27017
+    at _handleConnectionErrors (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\connection.js:875:11)
+    at NativeConnection.openUri (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\connection.js:826:11)
+    at async connect (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:176:12)
+    at async Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:4:17)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T17:45:54.333Z - MongooseServerSelectionError: connect ECONNREFUSED ::1:27017
+    at _handleConnectionErrors (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\connection.js:875:11)
+    at NativeConnection.openUri (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\connection.js:826:11)
+    at async connect (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:176:12)
+    at async Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:4:17)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T17:46:40.132Z - MongooseServerSelectionError: connect ECONNREFUSED ::1:27017
+    at _handleConnectionErrors (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\connection.js:875:11)
+    at NativeConnection.openUri (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\node_modules\mongoose\lib\connection.js:826:11)
+    at async connect (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:176:12)
+    at async Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:4:17)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T17:48:30.169Z - Error: Could not connect database
+    at connection.getUsers (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:193:21)
+    at async Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:4:17)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T17:51:08.454Z - Error: Could not connect database
+    at connection.getUsers (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:193:21)
+    at async Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:4:17)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T17:53:24.943Z - Error: Could not connect database
+    at connection.getUsers (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:193:21)
+    at async Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:4:17)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T17:55:00.301Z - Error: Could not connect database
+    at connection.getUsers (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:193:21)
+    at async Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:4:17)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T17:58:38.038Z - Error: Could not connect database
+    at connection.getUsers (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:194:21)
+    at async Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:4:17)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T18:03:12.146Z - Error: Could not connect database
+    at connection.getUsers (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:194:21)
+    at async Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:4:17)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T18:15:10.006Z - Error: Could not connect database
+    at connection.getUsers (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:194:21)
+    at async Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:4:17)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T18:16:16.529Z - Error: Could not connect database
+    at connection.getUsers (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Utilities\connection.js:194:21)
+    at async Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:4:17)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T18:19:26.603Z - TypeError: model.findOne is not a function
+    at Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:5:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T18:20:50.388Z - TypeError: model.find is not a function
+    at Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:5:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T18:23:25.756Z - TypeError: model.find is not a function
+    at Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:5:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T18:23:37.773Z - TypeError: model.find is not a function
+    at Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:6:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T18:25:09.082Z - TypeError: model.findOne is not a function
+    at Model.checkUser (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Model\model.js:6:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:6:14)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T18:31:35.053Z - TypeError: error.status is not a function
+    at service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:9:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T18:34:49.218Z - Error: User is alredy register
+    at service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:8:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T18:41:45.518Z - Error: User is alredy register
+    at service.signUp (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:8:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:9:19
+2024-05-10T18:43:22.924Z - Error: Incorrect Password
+    at service.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:30:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:20:17
+2024-05-10T18:43:31.623Z - Error: User not exist
+    at service.login (C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Service\service.js:36:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\Users\AMOL\OneDrive\Desktop\Node Backend FlightBookingApp\Routing\routing.js:20:17

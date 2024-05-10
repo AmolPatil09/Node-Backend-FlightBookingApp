@@ -1,9 +1,76 @@
 const mongoose =require('mongoose');
 
+const userBooking=new mongoose.Schema({
 
+    bookingsId:{
+        type:String,
+        unique:true,
+        require:true
+       },
+    status:{
+        type:String,
+        require:true
+       }
+    
+})
+const travellerSchema=new mongoose.Schema({
+
+    passangerName:{
+        type:String,
+        require:true
+       },
+    passangerAge:{
+        type:Number,
+        require:true
+       },
+    gender:{
+        type:Number,
+        require:true
+    },
+    bookingStatus:
+    {
+            type:String,
+            require:true
+        
+    }
+})
+const bookSchema=new mongoose.Schema({
+
+    eamilId:{
+        type:String,
+        require:true
+       },
+    bookingsId:{
+        type:Number,
+        require:true
+       },
+    bookingsCost:{
+        type:Number,
+        require:true
+       },
+   departureDate:{
+        type:Date,
+        require:true
+       },
+   travelBookingClass:{
+        type:String,
+        require:true
+       },
+   noOfTickets:{
+        type:String,
+        require:true
+       },
+    passangerDetails:{
+        type:travellerSchema,
+        require:true
+       },
+    ticketStatus:{
+        type:String,
+        require:true
+       },
+})
 const userSchema=new mongoose.Schema({
-
-    emailId:{
+      emailId:{
         type:String,
         unique:true,
         require:true
@@ -39,19 +106,7 @@ const userSchema=new mongoose.Schema({
 
 })
 
-const userBooking=new mongoose.Schema({
 
-    bookingsId:{
-        type:String,
-        unique:true,
-        require:true
-       },
-    status:{
-        type:String,
-        require:true
-       }
-    
-})
 
 const fligtsSchema=new mongoose.Schema({
 
@@ -111,73 +166,19 @@ const flightInfoSchema=new mongoose.Schema({
     
 })
 
-const bookSchema=new mongoose.Schema({
 
-    eamilId:{
-        type:String,
-        require:true
-       },
-    bookingsId:{
-        type:Number,
-        require:true
-       },
-    bookingsCost:{
-        type:Number,
-        require:true
-       },
-   departureDate:{
-        type:Date,
-        require:true
-       },
-   travelBookingClass:{
-        type:String,
-        require:true
-       },
-   noOfTickets:{
-        type:String,
-        require:true
-       },
-    passangerDetails:{
-        type:travellerSchema,
-        require:true
-       },
-    ticketStatus:{
-        type:String,
-        require:true
-       },
-})
 
-const travellerSchema=new mongoose.Schema({
 
-    passangerName:{
-        type:String,
-        require:true
-       },
-    passangerAge:{
-        type:Number,
-        require:true
-       },
-    gender:{
-        type:Number,
-        require:true
-    },
-    bookingStatus:
-    {
-            type:String,
-            require:true
-        
-    }
-})
 
 const connection={}
-const url=""
+const url="mongodb://localhost:27017/FlightBooking"
 const connect=async(docName,dacName)=>{
-   (await mongoose.connect(url,{})).model(docName,dacName)
+   return (await mongoose.connect(url,{useNewUrlParser:true})).model(docName,dacName)
 }
 
-connection.getflightInfo=()=>{
+connection.getflightInfo=async()=>{
    try {
-    return connect('flightInfo',flightInfoSchema)
+    return await connect('flightInfo',flightInfoSchema)
    } catch (err) {
         let error =new Error("Could not connect database");
         error.status=500;
@@ -185,19 +186,20 @@ connection.getflightInfo=()=>{
    
    }
 }
-connection.getUsers=()=>{
+connection.getUsers= async()=>{
     try {
-     return connect('users',userSchema)
+     return (await mongoose.connect('mongodb://127.0.0.1:27017/flight',{})).model('user',userSchema)
     } catch (err) {
+        console.log(err);
          let error =new Error("Could not connect database");
          error.status=500;
          throw error
     
     }
  }
- connection.getFligts=()=>{
+ connection.getFligts=async()=>{
     try {
-     return connect('fligts',fligtsSchema)
+     return await connect('fligts',fligtsSchema)
     } catch (err) {
          let error =new Error("Could not connect database");
          error.status=500;
@@ -206,9 +208,9 @@ connection.getUsers=()=>{
     }
  }
 
- connection.getTraveller=()=>{
+ connection.getTraveller=async()=>{
     try {
-     return connect('traveller',travellerSchema)
+     return await connect('traveller',travellerSchema)
     } catch (err) {
          let error =new Error("Could not connect database");
          error.status=500;
@@ -219,9 +221,9 @@ connection.getUsers=()=>{
 
  
 
- connection.getTraveller=()=>{
+ connection.getTraveller=async()=>{
     try {
-     return connect('book',bookSchema)
+     return await connect('book',bookSchema)
     } catch (err) {
          let error =new Error("Could not connect database");
          error.status=500;
