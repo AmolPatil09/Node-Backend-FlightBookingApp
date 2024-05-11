@@ -39,26 +39,49 @@ service.login=async(emailId,password)=>{
     }
 }
 
-service.getAllFights=(req,res)=>{
+service.getAllFights=async()=>{
+    const flights=await Model.getAllFights();
+    if (flights) {
+        return flights;
+    } else {
+        const error=new Error("Something went wrong")
+        error.status=400
+        throw error 
+    }
 
 }
-service.bookFlight=(req,res)=>{
-
-}
-service.cancelFlight=(req,res)=>{
-
-}
-service.getAllBookingByUser=(req,res)=>{
-
-}
-service.getAllBookingAdmin=(req,res)=>{
-
-}
-service.cancelBookingOfAdmin=(req,res)=>{
-
-}
-service.logout=(req,res)=>{
+service.bookFlight=async(bookingData,userName)=>{
     
+    const booking=await Model.bookFlight(bookingData,userName);
+    if (booking) {
+        return booking;
+    } else {
+        const error=new Error("Something went wrong")
+        error.status=400
+        throw error 
+    }
+}
+service.cancelFlightBooking=async(bookingId,userName)=>{
+    const booking=await Model.cancelFlightBooking(bookingId,userName);
+    if (booking) {
+        return booking;
+    } else {
+        const error=new Error("Something went wrong")
+        error.status=400
+        throw error 
+    }
+
+}
+service.getAllBookingByUser=async(userName)=>{
+    const booking=await Model.getAllBookingByUser(userName);
+    if (booking) {
+        return booking;
+    } else {
+        const error=new Error("Something went wrong")
+        error.status=400
+        throw error 
+    }
+
 }
 
 

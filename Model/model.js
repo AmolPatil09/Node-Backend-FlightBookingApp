@@ -11,29 +11,31 @@ Model.signUp=async(signUpData)=>{
     const user=await model.create(signUpData)
     return user;
 }
-Model.login=(req,res)=>{
+Model.getAllFights=async()=>{
+    const model=await connection.getflightInfo();
+    const flights=await model.find({});
+    return flights;  
 
 }
-Model.getAllFights=(req,res)=>{
+Model.bookFlight=async(bookingData,userName)=>{
+  
+    const model=await connection.getUsers();
+    const flights=await model.updateOne({userName:userName},{$push:{bookings:bookingData}});
+    return flights;  
+
 
 }
-Model.bookFlight=(req,res)=>{
+Model.cancelFlightBooking=async(bookingId,userName)=>{
+    const model=await connection.getUsers();
 
+    // const booking=await model.updateOne({userName:userName},{$pull:{bookings:{bookingsId:bookingId}}});
+    const booking=await model.updateOne({userName:userName},{$pull:{bookings:{bookingsId:bookingId}}});
+    return booking;
 }
-Model.cancelFlight=(req,res)=>{
-
+Model.getAllBookingByUser=async(userName)=>{
+    const model=await connection.getUsers();
+    const Booking=await model.find({userName:userName},{_id:0,bookings:1})
+    return Booking;
 }
-Model.getAllBookingByUser=(req,res)=>{
-
-}
-Model.getAllBookingAdmin=(req,res)=>{
-
-}
-Model.cancelBookingOfAdmin=(req,res)=>{
-
-}
-Model.logout=(req,res)=>{    
-}
-
 
 module.exports=Model;

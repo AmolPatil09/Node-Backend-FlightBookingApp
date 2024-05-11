@@ -3,7 +3,7 @@ const mongoose =require('mongoose');
 const userBooking=new mongoose.Schema({
 
     bookingsId:{
-        type:String,
+        type:Number,
         unique:true,
         require:true
        },
@@ -100,7 +100,7 @@ const userSchema=new mongoose.Schema({
     
        },
        bookings:{
-        type:userBooking,
+        type:[],
         require:true
        }
 
@@ -171,7 +171,7 @@ const flightInfoSchema=new mongoose.Schema({
 
 
 const connection={}
-const url="mongodb://localhost:27017/FlightBooking"
+const url="mongodb://127.0.0.1:27017/FlightBooking"
 const connect=async(docName,dacName)=>{
    return (await mongoose.connect(url,{useNewUrlParser:true})).model(docName,dacName)
 }
@@ -190,7 +190,6 @@ connection.getUsers= async()=>{
     try {
      return (await mongoose.connect('mongodb://127.0.0.1:27017/flight',{})).model('user',userSchema)
     } catch (err) {
-        console.log(err);
          let error =new Error("Could not connect database");
          error.status=500;
          throw error
@@ -221,7 +220,7 @@ connection.getUsers= async()=>{
 
  
 
- connection.getTraveller=async()=>{
+ connection.getBookings=async()=>{
     try {
      return await connect('book',bookSchema)
     } catch (err) {
